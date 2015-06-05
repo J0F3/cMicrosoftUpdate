@@ -22,3 +22,4 @@ on_finish:
             # You can add other artifacts here
             (ls $zipFile)
         ) | % { Push-AppveyorArtifact $_.FullName }
+        
